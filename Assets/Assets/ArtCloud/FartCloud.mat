@@ -59,11 +59,12 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FresnelExponent: 1.28
+    - _FresnelExponent: 0.75
+    - _FresnelMult: 1.65
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _InvFade: 1.87
+    - _InvFade: 1.28
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1

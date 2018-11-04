@@ -1,0 +1,36 @@
+title: Start
+tags: 
+colorID: 0
+position: 592,181
+parent: 
+---
+<<set $name to "Ronja">>
+
+{$name}: Hey, I'm a character in a script!
+B: And I am too! You are talking to me!
+-> What's going on {$name}
+    {$name}: Why this is a demo of the script system!
+    B: And you're in it!
+-> Um ok
+{$name}: How delightful!
+B: What would you prefer to do next?
+[[Leave|Leave]]
+[[Learn about {$name}|LearnMore]]
+===
+title: Leave
+tags: 
+colorID: 0
+position: 387,487
+parent: 
+---
+A: Oh, goodbye! #line:1971e104
+B: You'll be back soon! #line:39d35a39
+===
+title: LearnMore
+tags: 
+colorID: 0
+position: 763,472
+parent: 
+---
+{$name}: HAHAHA #line:a2d211b5
+===

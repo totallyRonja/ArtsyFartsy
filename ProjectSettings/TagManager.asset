@@ -38,6 +38,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Water
+    uniqueID: 1020245369
+    locked: 0
+  - name: Island
+    uniqueID: 3651187491
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Characters
+    uniqueID: 1414267911
+    locked: 0
+  - name: Clouds
+    uniqueID: 567906455
+    locked: 0
+  - name: Player
+    uniqueID: 3667447087
     locked: 0

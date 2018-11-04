@@ -4,42 +4,11 @@
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
 		
 		[PowerSlider(4)] _FresnelExponent ("Fresnel Exponent", Range(0.25, 4)) = 1
+		_FresnelMult("fresnel multiplier", Range(0,2)) = 1
 		_InvFade("depth fade", Range(0.001,5)) = 1
 	}
 	SubShader {
-		Pass{
-			Tags{"RenderType"="Opaque" "Queue"="Geometry"}
-
-			ColorMask 0
-			Blend One Zero
-			ZWrite On
-
-			CGPROGRAM
-			#include "UnityCG.cginc"
-
-			#pragma vertex vert
-			#pragma fragment frag
-
-			struct appdata{
-				float4 vertex : POSITION;
-			};
-
-			struct v2f{
-				float4 vertex : SV_POSITION;
-			};
-
-			v2f vert(appdata v){
-				v2f o;
-				o.vertex = UnityObjectToClipPos(v.vertex);
-				return o;
-			}
-
-			fixed4 frag(v2f i) : SV_TARGET{
-				return 0;
-			}
-
-			ENDCG
-		}
+		
 
 		Tags { "RenderType"="Transparent" "Queue"="Transparent"}
 		LOD 200
@@ -69,6 +38,7 @@
 		float _FresnelExponent;
 		sampler2D _CameraDepthTexture;
 		float _InvFade;
+		float _FresnelMult;
 
 		// Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
 		// See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -80,7 +50,7 @@
 		float fresnel(float3 worldNormal, float3 viewDir){
 			float fresnel = dot(worldNormal, viewDir);
 			fresnel = saturate(fresnel);
-			return pow(fresnel, _FresnelExponent);
+			return saturate(pow(fresnel, _FresnelExponent) * _FresnelMult);
 		}
 
 		float depthFade(float4 screenPos, float eyeDepth){
@@ -138,7 +108,7 @@
 
 		void surf (Input i, inout SurfaceOutputStandard o) {
 			// Albedo comes from a texture tinted by color
-			fixed3 c = ValueNoise3d(i.worldPos * 0.5 + _Time.y) * _Color.rgb;
+			fixed3 c = ValueNoise3d(i.worldPos * 0.5) * _Color.rgb;
 			o.Albedo = c;
 			
 			o.Alpha = fresnel(i.worldNormal, i.viewDir) * depthFade(i.screenPos, i.eyeDepth);

@@ -1,0 +1,40 @@
+title: Mug
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Oh, hello Art.
+
+<<if $solved_mug_problem is false>>
+<<if visited("Mug_Problem")>>
+     [[Mug_Solution]]
+<<endif>>
+
+    [[Mug_Problem]]
+<<endif>>
+
+Thanks for helping me earlier!
+*add text about person who helped mug*
+===
+title: Mug_Problem
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+I can't seem to fixc this really tragic problem I have here.
+Can you help me fix it?
+Like... I can't imagine to do anything until this problem is taken care of.
+I wish there was someone out there who could do that.
+===
+title: Mug_Solution
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Thank you so much Art for talking to *helper*!
+I never would've guessed that *helper* was able to help me!
+<<set $solved_mug_problem to true>>
+===

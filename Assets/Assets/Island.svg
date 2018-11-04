@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58334 264.58333"
+   version="1.1"
+   id="svg4523"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="Island.svg">
+  <defs
+     id="defs4517" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ccc297"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="631.00742"
+     inkscape:cy="472.01907"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4520">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-32.416676)">
+    <path
+       style="fill:#ffffff;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="M 45.970359,259.04773 C 18.866725,216.37963 -6.9490076,146.25999 26.726951,127.55113 60.402914,108.84226 8.0180856,91.202472 31.003266,72.493605 53.988443,53.784739 86.060788,83.71892 112.78774,79.44261 c 26.72695,-4.27631 62.00653,-48.64305 98.88972,-8.552621 36.8832,40.090431 39.02134,106.373271 13.36347,152.343621 -21.09055,37.78725 -12.29438,41.15951 -73.23184,60.93746 -43.88434,14.24317 -78.735097,17.54476 -105.838731,-25.12334 z"
+       id="path5068"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="zssssssz" />
+  </g>
+</svg>
